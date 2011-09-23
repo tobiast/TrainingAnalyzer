@@ -1,0 +1,17 @@
+# build files
+*.class
+*.jar
+*.log
+*.iml
+*.iws
+*.ipr
+out/
+build/
+.gradle/
+
+
+# OS files
+*.DS_Store?
+Icon?
+Thumbs.db
+
