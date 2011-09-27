@@ -21,15 +21,13 @@ public class ServerStarter {
         ServletHolder servletHolder = new ServletHolder(new WicketServlet());
         servletHolder.setInitParameter("applicationClassName", HelloWorldApplication.class.getName());
 
-        ServletContextHandler servletContextHandler = new
-                ServletContextHandler(ServletContextHandler.SESSIONS);
+        ServletContextHandler servletContextHandler = new ServletContextHandler(ServletContextHandler.SESSIONS);
         servletContextHandler.setContextPath("/");
         servletContextHandler.addServlet(servletHolder, "/*");
 
         server.setHandler(servletContextHandler);
 
         server.start();
-
         server.join();
     }
 
