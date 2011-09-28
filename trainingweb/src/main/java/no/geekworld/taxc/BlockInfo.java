@@ -19,7 +19,7 @@ public class BlockInfo {
     private int recordSize;
     private int startPos;
     private static final int BLOCK_INFO_SIZE = 12;
-
+    
 
     /**
      * Create a block info object from the bytes containing the block info
@@ -42,6 +42,35 @@ public class BlockInfo {
         return startPos + BLOCK_INFO_SIZE + (numberOfRecords * recordSize);
     }
 
+    /**
+     *
+     * @return the type of block
+     */
+    public BlockType getBlockType() {
+        return blockType;
+    }
+
+    /**
+     *
+     * @return  the startpos of the block in the binary file. The header info is included
+     */
+    public int getStartPos() {
+        return startPos;
+    }
+
+
+    /**
+     *
+     * @return  the startpos of the block in the binary file. No header info is included
+     */
+    public int getDataStartPos() {
+        return startPos + BLOCK_INFO_SIZE;
+    }
+
+
+    public int getNumberOfRecords() {
+        return numberOfRecords;
+    }
 
     /**
      *

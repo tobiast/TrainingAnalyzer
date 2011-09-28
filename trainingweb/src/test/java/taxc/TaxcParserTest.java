@@ -4,6 +4,7 @@ import no.geekworld.taxc.TaxcParser;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.text.ParseException;
 
 
 /**
@@ -18,9 +19,11 @@ public class TaxcParserTest {
 
 
     @Test
-    public void testFileParse() throws IOException {
+    public void testFileParse() throws IOException, ParseException {
 
         //TaxcParser parser = new TaxcParser("trainingweb/src/test/java/taxc/10272.imf");
+        //TaxcParser parser = new TaxcParser("trainingweb/src/test/java/taxc/11882.caf");
+
         //parser.parse();
         
     }
