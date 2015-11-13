@@ -1,3 +1,1 @@
-wukka foobar
-
-dette er en tets
+Lek med treningsdata
